@@ -1,0 +1,71 @@
+body{
+    background-color: #000 !important;
+}
+
+div{
+    color: white !important;
+}
+
+.carrito{
+    height: 20px;
+    width: 20px;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemList{
+    text-align: center;
+}
+
+.badge {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    min-width: 11px;
+    padding: 1px 2px!important;
+    line-height: 11px!important;
+    font-weight: 650!important;
+    border-radius: 10px!important;
+  }
+
+.badge {
+    color: #000 !important;
+    background-color: #fff;
+}
+
+.badge-primary {
+    color: #000;
+    background-color: #C3A343
+}
+
+.font-small-extra {
+    font-size: 10px !important;
+}
+
+.cart-summary {
+    margin: 5px 0;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:center;
+  }
+  .cart-summary a:hover{
+    text-decoration: none;
+  }
+
+  .p-relative {
+    position: relative!important;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+.theme-wide .cart-summary {
+    background-color: transparent;
+}
+
+.cart-summary:hover {
+    opacity: 0.8;
+}
