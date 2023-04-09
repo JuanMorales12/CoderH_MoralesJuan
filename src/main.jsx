@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className='container'>
       <div className='container-header'>   
-          <NavBar elementosCant={3} />
+          <NavBar elementosCant={2} />
        </div>
         <ItemListContainer greeting={"Hola bienvenidos a GZ"} />
 
