@@ -1,0 +1,1 @@
+export const categorias = ["Pantalones","Remeras","Zapatillas","Gorras"];

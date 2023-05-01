@@ -1,19 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './style/index.css';
+import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
-import { NavBar } from './components/NavBar';
-import { ItemListContainer } from './components/ItemListContainer';
+import { App } from './App';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='container'>
-      <div className='container-header'>   
-          <NavBar elementosCant={2} />
-       </div>
-        <ItemListContainer greeting={"Hola bienvenidos a GZ"} />
-
-    </div>
+    <App />
   </React.StrictMode>,
 )

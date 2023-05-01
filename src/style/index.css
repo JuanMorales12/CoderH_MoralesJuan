@@ -10,11 +10,55 @@ div{
     height: 20px;
     width: 20px;
 }
+a{
+    text-decoration: none;
+}
+
+.item{
+    display: flex;
+    padding: 3px;
+    border: #fff 2px solid;
+}
+.item-container {
+    text-decoration: none;
+    display: grid;
+    flex: initial;
+    width: 50%!important;
+    /* !important necesary to override Bootstrap 2*/
+    height: auto;
+    max-width: initial;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
 .container-header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.logo{
+    align-items:center;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    max-width: 150px;
+    max-height: 200px; 
+}
+.container-nav {
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+.container-nav:hover {
+    color: #6b686d;
+    padding: 5px;
+
+}
+
 .itemList{
     text-align: center;
 }
@@ -69,3 +113,4 @@ div{
 .cart-summary:hover {
     opacity: 0.8;
 }
+
