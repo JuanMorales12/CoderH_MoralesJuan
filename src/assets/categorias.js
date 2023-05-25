@@ -1,1 +1,7 @@
-export const categorias = ["Pantalones","Remeras","Zapatillas","Gorras"];
+export const categorias = [
+    "Camisas",
+    "Pantalones",
+    "Vestidos",
+    "Chaquetas",
+    "Blusas"
+  ];
