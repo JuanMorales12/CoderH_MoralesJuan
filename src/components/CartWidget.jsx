@@ -65,8 +65,8 @@ export const CartWidget = () => {
                 <span className="total-pagar">${totalCarrito.toFixed(2)}</span>
               </div>
               <div className="buttons-cart">
-                <button className ="cart-button" onClick={handleVisible}><NavLink to = "/cart">Ver carrito</NavLink></button>
-                <button className ="cart-button" onClick={handleVisible}><NavLink to ="/checkout">Pagar</NavLink></button>
+                <NavLink to = "/cart"><button className ="cart-button" onClick={handleVisible}>Ver carrito</button></NavLink>
+                <NavLink to ="/checkout"><button className ="cart-button" onClick={handleVisible}>Pagar</button></NavLink>
               </div>
             </>
             :
