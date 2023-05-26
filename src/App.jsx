@@ -4,7 +4,7 @@ import { ItemListContainer } from './components/ItemListContainer'
 import './style/index.css';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import { ItemDetailContainer } from './components/ItemDetailContainer';
-import logo from './assets/Logo2.png'
+import logo from './assets/logo2.png'
 import { CartProvider } from './context/CartContext';
 import { CartView } from './components/CartView';
 import { Order } from './components/Order';
