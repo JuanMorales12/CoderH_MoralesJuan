@@ -41,7 +41,7 @@ export const RegistrationForm = ({onAdd}) => {
 
     return (
       <div className="container-form">
-        <h1>Formulario de Registro</h1>
+        <h1>Formulario de compra</h1>
         <form id="registration-form" onSubmit={(e)=>handleSend(e)}>
           <div className="form-group">
             <label htmlFor="name">Nombre:</label>
@@ -64,7 +64,7 @@ export const RegistrationForm = ({onAdd}) => {
             {errors.error && <p>{errors.errorMsg}</p>}
           </div>
           <div className="form-group">
-            <input type="submit" value="Registrar" />
+            <input type="submit" value="Confirmar compra" />
           </div>
         </form>
       </div>

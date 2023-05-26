@@ -7,14 +7,19 @@ export const CartContext = createContext({
 
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
-
-    console.log(cart);
-
     const addItem = (item,quantity) =>{
-        if(!isInCart(item.id))
+        if(!isInCart(item.id)){
             setCart(prev => [...prev,{...item,quantity}]);
-        else
-            console.log("El producto ya fue agregado");
+            return true;
+        }
+        return false;
+
+    }
+    const cantElementos = () =>{
+        let cantidad = 0;
+        if(cart.length > 0)
+            cart.forEach(item => cantidad += item.quantity)
+        return cantidad;
     }
 
     const removeItem = (itemId) =>{
@@ -39,7 +44,7 @@ export const CartProvider = ({children}) => {
     }
 
     return (
-        <CartContext.Provider value={{cart,addItem,removeItem,clearCart,total}}>
+        <CartContext.Provider value={{cart,addItem,removeItem,clearCart,total,cantElementos}}>
             {children}
         </CartContext.Provider>
     )

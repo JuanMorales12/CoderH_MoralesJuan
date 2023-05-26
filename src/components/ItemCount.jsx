@@ -14,17 +14,21 @@ export const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     const handleAdd = () =>{
+        
         onAdd(quantity);
     }
 
   return (
     <>
-        <div className="Botonera-Item">
-            <button className="Button" onClick={Decrement}>-</button>
-            <h4 className="cantidad">{quantity}</h4>
-            <button className="Button" onClick={Increment}>+</button>
+        <div className="botonera-item">
+            <button className="button-item" onClick={Decrement}><p>-</p></button>
+            <h4 className="cantidad-add">{quantity}</h4>
+            <button className="button-item" onClick={Increment}><p>+</p></button>
         </div>
-        <button className="agregar-product" onClick={handleAdd}>Añadir al carrito</button>
+        <button className="add-to-cart-btn" onClick={handleAdd}>
+            <span className="btn-text">Añadir al carrito</span>
+            <span className="btn-icon"><img src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping.png" alt="" className="cart-add" /></span>
+        </button>
     </>
   )
 }

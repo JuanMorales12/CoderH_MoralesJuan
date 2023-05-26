@@ -14,6 +14,8 @@
 - Firebase
 - yarn
 
+Justificacion: Se usó bootstrap por temas de responsividad, los estilos fueron cargados manualmente
+
 ## inicializar
 
 localmente: yarn dev

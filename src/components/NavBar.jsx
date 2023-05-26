@@ -7,7 +7,7 @@ import { db } from '../services/db';
 
 
 
-export const NavBar = ( { elementosCant}) => {
+export const NavBar = () => {
 
 
   const [categorias, setCategorias] = useState(null);
@@ -29,9 +29,20 @@ export const NavBar = ( { elementosCant}) => {
             categorias 
             ? 
               <>
-                {categorias.map(category=>{
-                  return <NavLink className="container-nav" key={category.id} to={`/category/${category.categoria}`}><p>{category.categoria} </p></NavLink>
-                })}
+                <nav className="navbar">
+                  <ul className="nav-list">
+                      <li className="nav-item"> <NavLink to="/"> Inicio </NavLink></li>
+                      <li className="nav-item dropdown">
+                        <a href="" className="dropdown-toggle">Productos</a>
+                          <ul className="dropdown-menu">
+                            {categorias.map(category=>{
+                              return <li key={category.id} className=""><NavLink  to={`/category/${category.categoria}`}><p>{category.categoria} </p></NavLink></li>
+                            })}
+                          </ul>
+                      </li>
+                      <li className="nav-item"> <NavLink to="/aboutus"> Sobre nosotros</NavLink></li>
+                  </ul>
+                </nav>
                 <CartWidget />
               </>
             :
