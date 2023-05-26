@@ -51,6 +51,8 @@ export const ItemListContainer = () => {
         </div>
       }
       {isLoading && <Loader/>}
+      {(!isLoading && productos) ?
+        (productos.length == 0)&&<div>Ups, parece que el producto no existe</div> : <></>}
     </>
   )
 }
