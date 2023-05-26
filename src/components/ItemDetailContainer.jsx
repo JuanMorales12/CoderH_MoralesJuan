@@ -71,6 +71,7 @@ export const ItemDetailContainer = ({ide = 0}) => {
                     </div>
                 </div>
         }
+        {!isLoading && !productoFiltrado && <div>Ups, parece que el producto no existe</div>}
         {isLoading && <Loader/>}
         
       </>
