@@ -1,7 +1,7 @@
 # Proyecto Coderhouse e-commerce React
 ## _Alumno : Juan Morales_
 
-
+Pagina: https://tienda-gz.netlify.app/
 - ✨Indumentaria GZ ✨
 
 ## Tecnologías
