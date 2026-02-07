@@ -28,14 +28,14 @@ export function ItemCount({ stock, initial, onAdd }: Props) {
         >
           <PlusIcon className="w-4 h-4" />
         </button>
-        <span className="text-sm text-gray-400 ml-2">{stock} disponibles</span>
+        <span className="text-sm text-gray-400 ml-2">{stock} available</span>
       </div>
 
       <button
         onClick={() => onAdd(quantity)}
         className="w-full px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors"
       >
-        Agregar al carrito
+        Add to cart
       </button>
     </div>
   );

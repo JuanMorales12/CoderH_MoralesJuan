@@ -28,7 +28,7 @@ export default function CategoryPage() {
         className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-8"
       >
         <ArrowLeftIcon className="w-4 h-4" />
-        Volver al inicio
+        Back to Home
       </Link>
 
       <h1 className="font-playfair text-3xl text-center mb-12 capitalize">{id}</h1>
@@ -44,7 +44,7 @@ export default function CategoryPage() {
           ))}
         </ProductGrid>
       ) : (
-        <p className="text-center text-gray-500">No se encontraron productos en esta categoria.</p>
+        <p className="text-center text-gray-500">No products found in this category.</p>
       )}
     </section>
   );

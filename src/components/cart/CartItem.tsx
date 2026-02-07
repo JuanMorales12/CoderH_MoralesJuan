@@ -48,7 +48,7 @@ export function CartItem({ item, onRemove, variant = "full" }: Props) {
       </div>
       <div className="flex-1 min-w-0">
         <h4 className="font-medium text-gray-900 truncate">{item.name}</h4>
-        <p className="text-sm text-gray-500">Cantidad: {item.quantity}</p>
+        <p className="text-sm text-gray-500">Qty: {item.quantity}</p>
       </div>
       <div className="text-right shrink-0">
         <p className="font-semibold">${total}</p>

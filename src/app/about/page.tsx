@@ -1,24 +1,24 @@
 export default function AboutPage() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-16">
-      <h1 className="font-playfair text-4xl text-center mb-8">Sobre Nosotros</h1>
+      <h1 className="font-playfair text-4xl text-center mb-8">About Us</h1>
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <p>
-          En GZ nos dedicamos a ofrecer ropa de buena calidad a precios accesibles.
-          Nuestro objetivo es brindar a nuestros clientes prendas modernas, comodas
-          y con estilo para que puedan expresar su personalidad a traves de la moda.
+          At GZ we are dedicated to offering quality clothing at affordable prices.
+          Our goal is to provide our customers with modern, comfortable and stylish
+          garments so they can express their personality through fashion.
         </p>
         <p>
-          Trabajamos en estrecha colaboracion con diseñadores y fabricantes de confianza
-          para garantizar que cada prenda cumpla con nuestros estandares de calidad.
-          Ademas, nos esforzamos por mantenernos al dia con las ultimas tendencias
-          y estilos para brindar a nuestros clientes una amplia variedad de opciones.
+          We work closely with trusted designers and manufacturers to ensure that
+          every garment meets our quality standards. We also strive to stay up to
+          date with the latest trends and styles to offer our customers a wide
+          variety of options.
         </p>
         <p>
-          En GZ, creemos que vestirse bien no tiene por que ser costoso. Nos enorgullece
-          ofrecer ropa de calidad a precios accesibles, para que todos puedan lucir a la
-          moda sin gastar una fortuna. Nuestro equipo esta comprometido en proporcionar
-          una excelente experiencia de compra y satisfacer las necesidades de nuestros clientes.
+          At GZ, we believe that dressing well doesn&apos;t have to be expensive. We
+          are proud to offer quality clothing at affordable prices, so everyone
+          can look fashionable without breaking the bank. Our team is committed to
+          providing an excellent shopping experience and meeting the needs of our customers.
         </p>
       </div>
     </section>

@@ -16,8 +16,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Indumentaria GZ",
-  description: "Ropa de calidad a precios accesibles - Buenos Aires, Argentina",
+  title: "GZ Clothing",
+  description: "Quality clothing at affordable prices - Buenos Aires, Argentina",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-white text-gray-900 antialiased">
         <CartProvider>
           <Header />

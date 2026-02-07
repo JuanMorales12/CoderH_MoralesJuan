@@ -44,7 +44,7 @@ export function CartWidget() {
       {isOpen && (
         <div className="absolute right-0 top-full mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-100 z-50">
           <div className="p-4">
-            <h3 className="font-semibold text-gray-900 mb-3">Carrito</h3>
+            <h3 className="font-semibold text-gray-900 mb-3">Cart</h3>
 
             {cart.length > 0 ? (
               <>
@@ -70,19 +70,19 @@ export function CartWidget() {
                     onClick={() => setIsOpen(false)}
                     className="flex-1 text-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors"
                   >
-                    Ver carrito
+                    View cart
                   </Link>
                   <Link
                     href="/checkout"
                     onClick={() => setIsOpen(false)}
                     className="flex-1 text-center px-4 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
                   >
-                    Pagar
+                    Pay
                   </Link>
                 </div>
               </>
             ) : (
-              <p className="text-gray-500 text-sm py-4 text-center">Tu carrito esta vacio</p>
+              <p className="text-gray-500 text-sm py-4 text-center">Your cart is empty</p>
             )}
           </div>
         </div>
