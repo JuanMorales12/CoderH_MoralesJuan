@@ -11,7 +11,7 @@ interface Props {
 export function OrderSummary({ items, total }: Props) {
   return (
     <div className="bg-gray-50 rounded-2xl p-6">
-      <h3 className="font-playfair text-xl mb-4">Resumen de compra</h3>
+      <h3 className="font-playfair text-xl mb-4">Order Summary</h3>
       <div className="space-y-3">
         {items.map((item) => (
           <CartItem key={item.id} item={item} variant="summary" />

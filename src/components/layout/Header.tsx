@@ -15,7 +15,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="shrink-0 flex items-center gap-1.5">
           <span className="font-playfair text-xl font-bold tracking-tight text-gray-900">GZ</span>
-          <span className="hidden sm:inline text-xs text-gray-400 uppercase tracking-widest">Indumentaria</span>
+          <span className="hidden sm:inline text-xs text-gray-400 uppercase tracking-widest">Clothing</span>
         </Link>
 
         {/* Desktop Nav */}

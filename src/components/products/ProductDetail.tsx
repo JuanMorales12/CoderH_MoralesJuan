@@ -30,16 +30,16 @@ export function ProductDetail({ product }: { product: Product }) {
       <h1 className="font-playfair text-4xl mt-2 text-gray-900">
         {product.nombre}
       </h1>
-      <p className="text-3xl font-semibold mt-4">${product.precio.toLocaleString("es-AR")}</p>
+      <p className="text-3xl font-semibold mt-4">${product.precio.toLocaleString("en-US")}</p>
 
       <div className="mt-8">
         {added ? (
           <div className="px-4 py-3 bg-emerald-50 border border-emerald-200 rounded-lg">
-            <p className="text-emerald-700 font-medium">Se agrego con exito al carrito!</p>
+            <p className="text-emerald-700 font-medium">Successfully added to cart!</p>
           </div>
         ) : alreadyInCart ? (
           <div className="px-4 py-3 bg-amber-50 border border-amber-200 rounded-lg">
-            <p className="text-amber-700 font-medium">Este producto ya esta en tu carrito.</p>
+            <p className="text-amber-700 font-medium">This product is already in your cart.</p>
           </div>
         ) : (
           <ItemCount stock={product.stock} initial={1} onAdd={handleAdd} />

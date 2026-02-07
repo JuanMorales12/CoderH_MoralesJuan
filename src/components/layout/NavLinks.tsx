@@ -27,7 +27,7 @@ export function NavLinks({ onNavigate, vertical }: { onNavigate?: () => void; ve
           isActive("/") ? "text-brand-600" : "text-gray-700"
         }`}
       >
-        Inicio
+        Home
       </Link>
 
       {/* Dropdown de Productos */}
@@ -41,7 +41,7 @@ export function NavLinks({ onNavigate, vertical }: { onNavigate?: () => void; ve
             pathname.startsWith("/category") ? "text-brand-600" : "text-gray-700"
           }`}
         >
-          Productos
+          Products
           <ChevronDownIcon className={`w-4 h-4 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
         </button>
 
@@ -71,7 +71,7 @@ export function NavLinks({ onNavigate, vertical }: { onNavigate?: () => void; ve
           isActive("/about") ? "text-brand-600" : "text-gray-700"
         }`}
       >
-        Sobre nosotros
+        About Us
       </Link>
     </nav>
   );

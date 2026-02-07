@@ -36,14 +36,14 @@ export default function CheckoutPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
           </div>
-          <h2 className="font-playfair text-2xl mb-2">Compra realizada con exito!</h2>
-          <p className="text-gray-600 mb-4">Tu codigo de orden es:</p>
+          <h2 className="font-playfair text-2xl mb-2">Order placed successfully!</h2>
+          <p className="text-gray-600 mb-4">Your order ID is:</p>
           <p className="font-mono text-lg bg-white px-4 py-2 rounded-lg inline-block border border-emerald-200">
             {orderId}
           </p>
           <div className="mt-6">
             <Link href="/" className="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors inline-block">
-              Volver al inicio
+              Back to Home
             </Link>
           </div>
         </div>
@@ -54,9 +54,9 @@ export default function CheckoutPage() {
   if (cart.length === 0 && !orderId) {
     return (
       <section className="max-w-2xl mx-auto px-4 py-16 text-center">
-        <p className="text-gray-500 text-lg mb-4">Primero debes agregar elementos al carrito.</p>
+        <p className="text-gray-500 text-lg mb-4">You need to add items to your cart first.</p>
         <Link href="/" className="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors inline-block">
-          Ver productos
+          Browse products
         </Link>
       </section>
     );
@@ -64,7 +64,7 @@ export default function CheckoutPage() {
 
   return (
     <section className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="font-playfair text-3xl mb-8">Finalizar compra</h1>
+      <h1 className="font-playfair text-3xl mb-8">Checkout</h1>
       <div className="grid lg:grid-cols-2 gap-8">
         <CheckoutForm onSubmit={handleSubmit} loading={loading} />
         <OrderSummary items={cart} total={cartTotal} />

@@ -20,7 +20,7 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (confirmEmailRef.current?.value !== form.email) {
-      setError("Los emails no coinciden");
+      setError("Emails do not match");
       confirmEmailRef.current?.focus();
       return;
     }
@@ -30,11 +30,11 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 p-6">
-      <h2 className="font-playfair text-2xl mb-6">Datos de compra</h2>
+      <h2 className="font-playfair text-2xl mb-6">Billing Details</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            Nombre
+            Name
           </label>
           <input
             type="text"
@@ -42,7 +42,7 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
             required
             onChange={handleChange}
             className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition"
-            placeholder="Tu nombre completo"
+            placeholder="Your full name"
           />
         </div>
 
@@ -62,7 +62,7 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
 
         <div>
           <label htmlFor="confirm-email" className="block text-sm font-medium text-gray-700 mb-1">
-            Confirmar Email
+            Confirm Email
           </label>
           <input
             type="email"
@@ -70,13 +70,13 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
             required
             ref={confirmEmailRef}
             className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition"
-            placeholder="Confirma tu email"
+            placeholder="Confirm your email"
           />
         </div>
 
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-            Telefono
+            Phone
           </label>
           <input
             type="tel"
@@ -85,9 +85,9 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
             pattern="[0-9]{10}"
             onChange={handleChange}
             className="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition"
-            placeholder="10 digitos"
+            placeholder="10 digits"
           />
-          <p className="text-xs text-gray-400 mt-1">Ingresa un numero de 10 digitos.</p>
+          <p className="text-xs text-gray-400 mt-1">Enter a 10-digit number.</p>
         </div>
 
         {error && (
@@ -104,10 +104,10 @@ export function CheckoutForm({ onSubmit, loading }: Props) {
           {loading ? (
             <span className="flex items-center justify-center gap-2">
               <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-              Procesando...
+              Processing...
             </span>
           ) : (
-            "Confirmar compra"
+            "Confirm order"
           )}
         </button>
       </form>
