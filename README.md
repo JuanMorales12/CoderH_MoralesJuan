@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Indumentaria GZ - E-Commerce
 
-## Getting Started
+E-commerce de ropa con carrito de compras, filtrado por categorias, checkout con generacion de ordenes y diseño responsive.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 16** (App Router) + **React 19** + **TypeScript**
+- **Firebase** Firestore — productos, categorias, ordenes
+- **Tailwind CSS** — diseño responsive mobile-first
+- **next/font** — Inter + Playfair Display
+
+## Features
+
+- Catalogo de productos con grid responsivo (1-4 columnas)
+- Filtrado por categorias cargadas dinamicamente desde Firestore
+- Detalle de producto con selector de cantidad y control de stock
+- Carrito de compras con dropdown y pagina completa
+- Checkout con validacion de formulario y creacion de ordenes en Firestore
+- Navegacion mobile con menu hamburguesa
+- Hero banner full-width con overlay
+
+## Project Structure
+
+```
+src/
+├── app/                    # Pages (App Router)
+│   ├── page.tsx            # Home — hero + grid de productos
+│   ├── category/[id]/      # Productos filtrados por categoria
+│   ├── item/[idProduct]/   # Detalle de producto
+│   ├── cart/               # Carrito completo
+│   ├── checkout/           # Formulario + resumen de orden
+│   └── about/              # Sobre nosotros
+├── components/
+│   ├── layout/             # Header, Footer, NavLinks
+│   ├── cart/               # CartWidget, CartItem, EmptyCart
+│   ├── products/           # ProductCard, ProductGrid, ProductDetail, ItemCount
+│   ├── checkout/           # CheckoutForm, OrderSummary
+│   └── ui/                 # SVG icons
+├── lib/                    # Firebase init + queries (products, categories, orders)
+├── context/                # CartContext (React Context)
+└── types/                  # TypeScript interfaces
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/JuanMorales12/CoderH_MoralesJuan.git
+cd CoderH_MoralesJuan
+npm install
+cp .env.local.example .env.local   # agregar credenciales de Firebase
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
