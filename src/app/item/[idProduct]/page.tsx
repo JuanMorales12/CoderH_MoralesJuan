@@ -32,9 +32,9 @@ export default function ProductDetailPage() {
   if (!product) {
     return (
       <div className="max-w-6xl mx-auto px-4 py-16 text-center">
-        <p className="text-gray-500 text-lg">Product not found.</p>
+        <p className="text-gray-500 text-lg">Producto no encontrado.</p>
         <Link href="/" className="text-brand-600 hover:underline mt-4 inline-block">
-          Back to Home
+          Volver al inicio
         </Link>
       </div>
     );
@@ -47,7 +47,7 @@ export default function ProductDetailPage() {
         className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-8"
       >
         <ArrowLeftIcon className="w-4 h-4" />
-        Back to Home
+        Volver al inicio
       </Link>
 
       <div className="grid md:grid-cols-2 gap-12">

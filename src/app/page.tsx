@@ -23,7 +23,7 @@ export default function HomePage() {
       <section className="relative h-[60vh] w-full overflow-hidden">
         <Image
           src="/images/banner1.jpg"
-          alt="GZ Clothing"
+          alt="Indumentaria GZ"
           fill
           className="object-cover"
           priority
@@ -31,10 +31,10 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="font-playfair text-5xl md:text-7xl mb-4">
-              GZ Clothing
+              Indumentaria GZ
             </h1>
             <p className="text-lg md:text-xl font-light tracking-wide">
-              Quality clothing at affordable prices
+              Ropa de calidad a precios accesibles
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function HomePage() {
       {/* Product Grid */}
       <section className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="font-playfair text-3xl text-center mb-12">
-          Our Products
+          Nuestros Productos
         </h2>
 
         {loading ? (
@@ -57,7 +57,7 @@ export default function HomePage() {
             ))}
           </ProductGrid>
         ) : (
-          <p className="text-center text-gray-500">No products found.</p>
+          <p className="text-center text-gray-500">No se encontraron productos.</p>
         )}
       </section>
     </>

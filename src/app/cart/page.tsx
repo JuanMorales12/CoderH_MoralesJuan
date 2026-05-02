@@ -13,7 +13,7 @@ export default function CartPage() {
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="font-playfair text-3xl mb-8">Your Cart</h1>
+      <h1 className="font-playfair text-3xl mb-8">Tu Carrito</h1>
 
       <div className="space-y-4">
         {cart.map((item) => (
@@ -28,13 +28,13 @@ export default function CartPage() {
             onClick={clearCart}
             className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors font-medium"
           >
-            Clear cart
+            Limpiar carrito
           </button>
           <Link
             href="/checkout"
             className="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium"
           >
-            Checkout
+            Finalizar compra
           </Link>
         </div>
       </div>
